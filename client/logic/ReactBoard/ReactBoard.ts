@@ -1,5 +1,3 @@
-import { BoardCellType } from '../../views/BoardCell/BoardCell';
-
 export default abstract class ReactBoard implements IReactBoard {
   protected render: RenderFunction;
 
@@ -15,7 +13,7 @@ export default abstract class ReactBoard implements IReactBoard {
 
 }
 
-type RenderFunction = (boardCellsState: BoardCellType[], winnerDirection?: string) => Promise<void>;
+type RenderFunction = (...props: any) => Promise<void>;
 
 interface IReactBoard {
   setRenderFunction(render: RenderFunction): void;

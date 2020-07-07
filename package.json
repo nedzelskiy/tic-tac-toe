@@ -10,6 +10,7 @@
     "@types/react": "^16.9.41",
     "@types/react-dom": "^16.9.8",
     "@types/webpack": "^4.41.18",
+    "concurrently": "^5.2.0",
     "css-loader": "^3.6.0",
     "ignore-loader": "^0.1.2",
     "mini-css-extract-plugin": "^0.9.0",
@@ -27,6 +28,7 @@
     "webpack-cli": "^3.3.12"
   },
   "scripts": {
+    "dev": "sh ./sh/dev.sh",
     "dev:client:build:watch": "MODE=development WATCH=true sh sh/client.build.sh",
     "dev:server:build:watch": "MODE=development WATCH=true sh sh/server.build.sh",
     "dev:server:run": "MODE=development sh sh/server.run.sh",
