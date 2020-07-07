@@ -1,0 +1,37 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/mini-css-extract-plugin": "^0.9.1",
+    "@types/minimist": "^1.2.0",
+    "@types/node": "^14.0.14",
+    "@types/react": "^16.9.41",
+    "@types/react-dom": "^16.9.8",
+    "@types/webpack": "^4.41.18",
+    "css-loader": "^3.6.0",
+    "ignore-loader": "^0.1.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "minimist": "^1.2.5",
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "sass-loader": "^9.0.1",
+    "ts-loader": "^7.0.5",
+    "ts-node": "^8.10.2",
+    "tslint-config-airbnb": "^5.11.2",
+    "typescript": "^3.9.6",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "scripts": {
+    "dev:client:build:watch": "MODE=development WATCH=true sh sh/client.build.sh",
+    "dev:server:build:watch": "MODE=development WATCH=true sh sh/server.build.sh",
+    "dev:server:run": "MODE=development sh sh/server.run.sh",
+    "prod:client:build": "MODE=production sh sh/client.build.sh",
+    "prod:server:build": "MODE=production sh sh/server.build.sh",
+    "prod:server:run": "MODE=production sh sh/server.run.sh"
+  }
+}

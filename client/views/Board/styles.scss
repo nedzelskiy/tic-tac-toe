@@ -1,0 +1,56 @@
+@import '../BoardCell/styles';
+
+.board {
+  display: flex;
+  width: $boardCellSize * 3 + 6;
+  height: $boardCellSize * 3 + 6;
+  flex-wrap: wrap;
+  background-color: #e2e2e2;
+  overflow: hidden;
+  position: relative;
+
+  hr {
+    position: absolute;
+    border: 2px solid black;
+    width: 100%;
+
+    &.row1 {
+      top: 15%;
+    }
+
+    &.row2 {
+      top: 50%;
+    }
+
+    &.row3 {
+      top: 82%;
+    }
+
+    &.col1 {
+      transform: rotate(90deg);
+      top: 50%;
+      left: -33%;
+    }
+
+    &.col2 {
+      transform: rotate(90deg);
+      top: 50%;
+    }
+
+    &.col3 {
+      transform: rotate(90deg);
+      top: 50%;
+      left: 33%;
+    }
+
+    &.crossToDown {
+      top: 50%;
+      transform: rotate(45deg);
+    }
+
+    &.crossToUp {
+      top: 50%;
+      transform: rotate(-45deg);
+    }
+  }
+}
